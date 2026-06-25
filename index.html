@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spartan Calisthenics Park – Ahilyanagar</title>
+  <meta name="description" content="Spartan Calisthenics Park, Ahilyanagar. Fat Loss · Muscle Gain · Skills · Fitness. Train outdoors. New Park Launching Soon." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Particle Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-icon">⚔</span>
+        <span class="logo-text">SPARTAN<span class="logo-accent">CALISTHENICS</span></span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#owner">Trainer</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="#contact" class="nav-cta">Join Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">SPARTAN</div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" data-glitch="AHILYANAGAR · MAHARASHTRA">AHILYANAGAR · MAHARASHTRA</div>
+      <h1 class="hero-title">
+        <span class="hero-line line-1">FORGE</span>
+        <span class="hero-line line-2">YOUR</span>
+        <span class="hero-line line-3 accent">BODY.</span>
+      </h1>
+      <p class="hero-sub">Fat Loss · Muscle Gain · Skills · Fitness<br/>Train outdoors. No machines. Just willpower.</p>
+      <div class="hero-badges">
+        <span class="badge">Gym/Physical Fitness Center</span>
+      </div>
+      <div class="hero-cta-row">
+        <a href="https://wa.me/919325004922?text=Hi%20Spartan%20Calisthenics!%20I%27m%20interested%20in%20joining." target="_blank" class="btn btn-primary">
+          <i class="fab fa-whatsapp"></i> WhatsApp Us
+        </a>
+        <a href="#programs" class="btn btn-ghost">See Programs</a>
+      </div>
+    </div>
+    <div class="hero-shield">
+      <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" class="shield-svg">
+        <path d="M100 10 L190 50 L190 130 Q190 200 100 230 Q10 200 10 130 L10 50 Z" 
+              fill="none" stroke="#E63329" stroke-width="2" stroke-dasharray="600" stroke-dashoffset="600" class="shield-outline"/>
+        <text x="100" y="120" text-anchor="middle" font-family="Bebas Neue" font-size="28" fill="#C8A84B" opacity="0.9">SC</text>
+        <text x="100" y="148" text-anchor="middle" font-family="Inter" font-size="8" fill="#F0EDE8" letter-spacing="4" opacity="0.7">CALISTHENICS</text>
+        <line x1="60" y1="105" x2="140" y2="105" stroke="#E63329" stroke-width="1" opacity="0.6"/>
+      </svg>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-bar">
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="0">
+      <span class="stat-num" data-target="350">0</span><span class="stat-plus">+</span>
+      <p>Members Trained</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+      <span class="stat-num" data-target="6">0</span><span class="stat-plus">+</span>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+      <span class="stat-num" data-target="4">0</span>
+      <p>Training Programs</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+      <span class="stat-num" data-target="0">0</span>
+      <p>Machines Needed</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">About Us</div>
+      <div class="about-grid">
+        <div class="about-text" data-aos="fade-right" data-aos-delay="100">
+          <h2 class="section-title">NOT A GYM.<br/><span class="accent">A BATTLEFIELD.</span></h2>
+          <p>Spartan Calisthenics Park is Ahilyanagar's premier outdoor calisthenics training ground. We believe the human body is the only equipment you'll ever need — no machines, no memberships chains, just raw movement mastery.</p>
+          <p>Whether you're starting from zero or chasing advanced skills like muscle-ups and handstands, we train you the Spartan way: disciplined, progressive, and powerful.</p>
+          <ul class="about-list">
+            <li><i class="fas fa-check-circle"></i> Outdoor training environment</li>
+            <li><i class="fas fa-check-circle"></i> Bodyweight-only methodology</li>
+            <li><i class="fas fa-check-circle"></i> All fitness levels welcome</li>
+            <li><i class="fas fa-check-circle"></i> Expert coaching by <a href="https://www.instagram.com/calisthenicsamey?igsh=MXc5bmxpaWJhNnFndA==" target="_blank">@calisthenicsamey</a></li>
+          </ul>
+        </div>
+        <div class="about-visual" data-aos="fade-left" data-aos-delay="200">
+          <div class="about-card-stack">
+            <div class="about-card card-1">
+              <span class="card-icon">💪</span>
+              <span class="card-label">Strength</span>
+            </div>
+            <div class="about-card card-2">
+              <span class="card-icon">🔥</span>
+              <span class="card-label">Fat Loss</span>
+            </div>
+            <div class="about-card card-3">
+              <span class="card-icon">🎯</span>
+              <span class="card-label">Skills</span>
+            </div>
+            <div class="about-center-text">BUILT<br/>DIFFERENT</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="programs section" id="programs">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">What We Offer</div>
+      <h2 class="section-title centered" data-aos="fade-up">TRAINING <span class="accent">PROGRAMS</span></h2>
+      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="50">Choose your battlefield. We'll show you how to conquer it.</p>
+      <div class="programs-grid">
+
+        <div class="program-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="program-icon">🔥</div>
+          <h3>Fat Loss</h3>
+          <p>High-intensity calisthenics circuits designed to torch fat while building lean, functional muscle — no treadmills required.</p>
+          <div class="program-tag">Beginner Friendly</div>
+        </div>
+
+        <div class="program-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="program-badge">Most Popular</div>
+          <div class="program-icon">💪</div>
+          <h3>Muscle Gain</h3>
+          <p>Progressive overload using bodyweight — pull-ups, dips, push-up variations, and ring work to pack on real strength and size.</p>
+          <div class="program-tag">All Levels</div>
+        </div>
+
+        <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="program-icon">🎯</div>
+          <h3>Skill Training</h3>
+          <p>Master the elite moves — handstands, muscle-ups, front levers, planche progressions. The art of body control.</p>
+          <div class="program-tag">Intermediate+</div>
+        </div>
+
+        <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="program-icon">⚡</div>
+          <h3>General Fitness</h3>
+          <p>Build mobility, endurance, core strength, and athleticism for a healthier, more capable body — for life.</p>
+          <div class="program-tag">All Ages</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OWNER / TRAINER -->
+  <section class="owner section" id="owner">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">The Coach</div>
+      <div class="owner-grid">
+        <div class="owner-image-wrap" data-aos="fade-right" data-aos-delay="100">
+          <div class="owner-img-frame">
+            <img src="images/img1.jpeg" alt="Amey Sathe – Spartan Calisthenics Coach" />
+            <div class="owner-img-accent"></div>
+          </div>
+          <div class="owner-social">
+            <a href="https://www.instagram.com/spartancalisthenicspark" target="_blank" class="social-pill">
+              <i class="fab fa-instagram"></i> @spartancalisthenicspark
+            </a>
+          </div>
+        </div>
+        <div class="owner-text" data-aos="fade-left" data-aos-delay="200">
+          <h2 class="section-title">AMEY <span class="accent">SATHE</span></h2>
+          <div class="owner-title-tag">Founder & Head Coach</div>
+          <p>Amey is the founder of Spartan Calisthenics Park and one of Ahilyanagar's most dedicated calisthenics practitioners. His journey from beginner to advanced athlete shapes how he coaches — with patience, precision, and a no-excuses attitude.</p>
+          <p>His philosophy is simple: <strong>"Your body is the gym."</strong> Every session is built around real progression, not just burning calories.</p>
+          <div class="owner-creds">
+            <div class="cred"><i class="fas fa-shield-alt"></i> Certified Calisthenics Coach</div>
+            <div class="cred"><i class="fas fa-users"></i> 100+ Students Transformed</div>
+            <div class="cred"><i class="fas fa-map-marker-alt"></i> Based in Ahilyanagar</div>
+          </div>
+          <a href="https://wa.me/919325004922?text=Hi%20Amey!%20I%20want%20to%20start%20calisthenics%20training." target="_blank" class="btn btn-primary mt-btn">
+            <i class="fab fa-whatsapp"></i> Train with Amey
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAUNCHING SOON BANNER -->
+  <section class="launch-banner">
+    <div class="launch-inner">
+      <div class="launch-pulse"></div>
+      <span class="launch-label">NEW PARK LAUNCHED</span>
+      <p>Bigger space. More equipment. Same Spartan spirit.</p>
+      <a href="https://wa.me/919325004922?text=Hi!%20Tell%20me%20about%20the%20new%20Spartan%20park%20launch." target="_blank" class="btn btn-outline-red">
+        Get Notified <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location-section section" id="location">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">Find Us</div>
+      <h2 class="section-title centered" data-aos="fade-up">OUR <span class="accent">LOCATION</span></h2>
+      <div class="location-grid">
+        <div class="location-info" data-aos="fade-right" data-aos-delay="100">
+          <div class="location-card">
+            <div class="loc-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Address</strong>
+                <p>Ahilyanagar (Ahmednagar), Maharashtra, India</p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <strong>Phone / WhatsApp</strong>
+                <p><a href="tel:+919325004922">+91 93250 04922</a></p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:ameysathe356@gmail.com">ameysathe356@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="loc-item">
+              <i class="fab fa-instagram"></i>
+              <div>
+                <strong>Instagram</strong>
+                <p><a href="https://www.instagram.com/spartancalisthenicspark" target="_blank">@spartancalisthenicspark</a></p>
+              </div>
+            </div>
+            <a href="https://maps.app.goo.gl/7asffsmstJbtn9RD9" target="_blank" class="btn btn-primary full-width-btn">
+              <i class="fas fa-directions"></i> Get Directions
+            </a>
+          </div>
+        </div>
+        <div class="location-map" data-aos="fade-left" data-aos-delay="200">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30398.10936718538!2d74.73500!3d19.09450!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdc47ddddddddd%3A0xaaaaaaaaaaaaaaa!2sAhilyanagar%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+            title="Spartan Calisthenics Park Location">
+          </iframe>
+          <a href="https://maps.app.goo.gl/7asffsmstJbtn9RD9" target="_blank" class="map-overlay-btn">
+            <i class="fas fa-external-link-alt"></i> Open in Google Maps
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">Get Started</div>
+      <h2 class="section-title centered" data-aos="fade-up">JOIN THE <span class="accent">TRIBE</span></h2>
+      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="50">Ready to start? Drop us a message and we'll get back to you within 24 hours.</p>
+      <div class="contact-ctas" data-aos="fade-up" data-aos-delay="100">
+        <a href="https://wa.me/919325004922?text=Hi%20Spartan%20Calisthenics!%20I%20want%20to%20join." target="_blank" class="contact-card whatsapp-card">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <strong>Chat on WhatsApp</strong>
+            <span>Fastest response</span>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </a>
+        <a href="tel:+919325004922" class="contact-card call-card">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <strong>Call Us</strong>
+            <span>+91 93250 04922</span>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </a>
+        <a href="mailto:ameysathe356@gmail.com" class="contact-card email-card">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <strong>Email Us</strong>
+            <span>ameysathe356@gmail.com</span>
+          </div>
+          <i class="fas fa-chevron-right arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">⚔</span>
+          <span>SPARTAN<span class="accent">CALISTHENICS</span></span>
+        </div>
+        <p>Ahilyanagar's premier outdoor calisthenics training ground. Train your body. Forge your will. No machines needed.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/spartancalisthenicspark" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/919325004922" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:ameysathe356@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://maps.app.goo.gl/7asffsmstJbtn9RD9" target="_blank" aria-label="Location">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#owner">Our Coach</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+919325004922">+91 93250 04922</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:ameysathe356@gmail.com">ameysathe356@gmail.com</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Ahilyanagar, Maharashtra</p>
+        <div class="footer-launch-note">New Park Launched!</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Spartan Calisthenics. All rights reserved.</p>
+      <p class="footer-made">Built by <a href="https://onestopsolutionoffounders.com" target="_blank">One Stop Solution Of Founders</a></p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919325004922?text=Hi%20Spartan%20Calisthenics!" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
